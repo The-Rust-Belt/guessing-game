@@ -40,3 +40,18 @@ fn conditional() {
     };
     println!("{}", result)
 }
+
+const SOME_CONSTANT: u28 = 20;
+
+enum Direction {
+    Up,
+    Down
+}
+
+fn enum_example() {
+    let player_direction: Direction = Direction::Up;
+    match player_direction {
+        Direction::Up => println!("Up"),
+        Direction::Down => println!("Down"),
+    }
+}
