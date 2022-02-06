@@ -111,3 +111,17 @@ impl Person {
         String::from("{}, {}", &self.last_name, &self.first_name)
     }
 }
+
+// Enums also have methods
+enum Message {
+    Quit,
+    Move {x: u64, y: u64},
+    Write(String),
+    ChangeColor(i32, i32, i32),
+}
+
+impl Message {
+    fn call() -> String {
+        String::from("Joe")
+    }
+}
